@@ -13,7 +13,7 @@
 
 </div>
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Game Mechanics](#-game-mechanics)
@@ -32,7 +32,7 @@
 - [Contributing](#-contributing)
 - [License](#-license)
 
-## 🌟 Overview
+## Overview
 
 **Tic Tac Toe Bolt** is not your traditional Tic Tac Toe game! This innovative Flutter application adds a lightning-fast, dynamic twist to the classic game we all know and love. With sleek animations, a modern UI, and a unique gameplay mechanic where your oldest moves disappear, it creates a faster-paced, more strategic gaming experience.
 
@@ -53,7 +53,7 @@ graph TD
 
 </div>
 
-## ⚡ Game Mechanics
+## Game Mechanics
 
 Tic Tac Toe Bolt introduces a revolutionary twist to the classic game:
 
@@ -75,7 +75,7 @@ Tic Tac Toe Bolt introduces a revolutionary twist to the classic game:
 
 </div>
 
-## 🎯 Features
+## Features
 
 <div align="center">
 
@@ -119,7 +119,7 @@ mindmap
 - **Interactive Tutorial**: Built-in "How to Play" screen with illustrated instructions
 - **Custom Painters**: Beautifully rendered X and O pieces using custom painters
 
-## 📱 App Structure
+## App Structure
 
 Tic Tac Toe Bolt is organized into several key screens, each with a distinct purpose:
 
@@ -150,7 +150,7 @@ flowchart LR
 
 </div>
 
-## 🎨 UI Components
+## UI Components
 
 ### Component Hierarchy
 
@@ -209,7 +209,7 @@ Tic Tac Toe Bolt uses a consistent design system throughout the application:
 - **Borders**: Rounded corners (12-16px radius)
 - **Elevation**: Subtle shadows for depth
 
-## ✨ Animations
+## Animations
 
 Tic Tac Toe Bolt features several custom animations that enhance the user experience:
 
@@ -260,7 +260,7 @@ sequenceDiagram
 
 </div>
 
-## 🎲 Game Logic
+## Game Logic
 
 ### State Management
 
@@ -319,7 +319,7 @@ pie title Move Distribution in Average Game
 
 </div>
 
-## 🏗️ Code Architecture
+## Code Architecture
 
 ### Class Structure
 
@@ -432,7 +432,7 @@ lib/
 └── theme/           # Theme configuration
 ```
 
-## 📥 Installation
+## Installation
 
 ### Prerequisites
 
@@ -477,7 +477,7 @@ lib/
 
 </div>
 
-## 🎮 How to Play
+## How to Play
 
 ### Basic Rules
 
@@ -542,7 +542,7 @@ stateDiagram-v2
 
 </div>
 
-## 📂 Project Structure
+## Project Structure
 
 ### Code Organization
 
@@ -607,7 +607,7 @@ Scaffold
 
 </div>
 
-## 🔍 Code Analysis
+## Code Analysis
 
 ### Main App Configuration
 
@@ -836,7 +836,7 @@ class OPainter extends CustomPainter {
 - Proportional sizing based on available space
 - Customizable color for theming support
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 ### Memory Usage
 
@@ -913,7 +913,7 @@ gantt
 
 </div>
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 ### Roadmap
 
@@ -1001,7 +1001,7 @@ class AIPlayer {
 }
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here's how you can contribute to Tic Tac Toe Bolt:
 
@@ -1055,7 +1055,7 @@ Found a bug or have a feature request? Please create an issue using the appropri
 - Bug Report: Include steps to reproduce, expected behavior, and actual behavior
 - Feature Request: Describe the feature, its benefits, and implementation ideas
 
-## 📄 License
+## License
 
 Tic Tac Toe Bolt is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
@@ -1083,7 +1083,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - The Flutter team for their amazing framework
 - The open-source community for their continuous inspiration
@@ -1094,7 +1094,7 @@ SOFTWARE.
 
 <div align="center">
 
-**Happy Gaming! ⚡🎮⚡**
+**Happy Gaming!**
 
 [![Made with Flutter](https://img.shields.io/badge/Made%20with-Flutter-02569B?style=for-the-badge&logo=flutter)](https://flutter.dev)
 [![Powered by Dart](https://img.shields.io/badge/Powered%20by-Dart-0175C2?style=for-the-badge&logo=dart)](https://dart.dev)
