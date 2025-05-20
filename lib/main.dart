@@ -125,21 +125,23 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
+  // In HomeScreen's build method:
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Theme.of(context).colorScheme.primary.withOpacity(0.8),
-              Theme.of(context).colorScheme.primary,
-            ],
+      body: SafeArea(
+        bottom: true,
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Theme.of(context).colorScheme.primary.withOpacity(0.8),
+                Theme.of(context).colorScheme.primary,
+              ],
+            ),
           ),
-        ),
-        child: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -271,72 +273,76 @@ class HowToPlayScreen extends StatelessWidget {
         title: const Text('How to Play'),
         elevation: 0,
       ),
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Theme.of(context).colorScheme.primary.withOpacity(0.05),
-              Theme.of(context).colorScheme.primary.withOpacity(0.1),
-            ],
+      body: SafeArea(
+        bottom: true,
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Theme.of(context).colorScheme.primary.withOpacity(0.05),
+                Theme.of(context).colorScheme.primary.withOpacity(0.1),
+              ],
+            ),
           ),
-        ),
-        child: ListView(
-          padding: const EdgeInsets.all(24),
-          children: [
-            _buildInstructionCard(
-              context,
-              'The Basics',
-              'Tic Tac Toe Bolt is a twist on the classic game where players take turns placing X or O on a 3x3 grid.',
-              Icons.grid_3x3,
-            ),
-            _buildInstructionCard(
-              context,
-              'The Twist',
-              'Each player can only have their last THREE moves active on the board at any time.',
-              Icons.bolt,
-            ),
-            _buildInstructionCard(
-              context,
-              'Disappearing Moves',
-              'When you make your fourth move, your first move disappears from the board. As you continue playing, your oldest move always gets removed.',
-              Icons.auto_delete,
-            ),
-            _buildInstructionCard(
-              context,
-              'Winning',
-              'The goal is still to get three in a row (horizontally, vertically, or diagonally), but it has to be done with your current active moves.',
-              Icons.emoji_events,
-            ),
-            _buildInstructionCard(
-              context,
-              'Strategy',
-              'Since moves disappear, you need to think ahead and plan your strategy carefully. Block your opponent while setting up your own winning moves!',
-              Icons.psychology,
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pop();
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Theme.of(context).colorScheme.secondary,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
+          child: ListView(
+            padding: const EdgeInsets.all(24),
+            children: [
+              _buildInstructionCard(
+                context,
+                'The Basics',
+                'Tic Tac Toe Bolt is a twist on the classic game where players take turns placing X or O on a 3x3 grid.',
+                Icons.grid_3x3,
+              ),
+              _buildInstructionCard(
+                context,
+                'The Twist',
+                'Each player can only have their last THREE moves active on the board at any time.',
+                Icons.bolt,
+              ),
+              _buildInstructionCard(
+                context,
+                'Disappearing Moves',
+                'When you make your fourth move, your first move disappears from the board. As you continue playing, your oldest move always gets removed.',
+                Icons.auto_delete,
+              ),
+              _buildInstructionCard(
+                context,
+                'Winning',
+                'The goal is still to get three in a row (horizontally, vertically, or diagonally), but it has to be done with your current active moves.',
+                Icons.emoji_events,
+              ),
+              _buildInstructionCard(
+                context,
+                'Strategy',
+                'Since moves disappear, you need to think ahead and plan your strategy carefully. Block your opponent while setting up your own winning moves!',
+                Icons.psychology,
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                ),
+                child: const Text(
+                  'Got it!',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ),
-              child: const Text(
-                'Got it!',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
   }
+
 
   Widget _buildInstructionCard(BuildContext context, String title, String description, IconData icon) {
     return Card(
