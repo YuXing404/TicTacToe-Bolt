@@ -746,8 +746,14 @@ class _GameScreenState extends State<GameScreen> with TickerProviderStateMixin {
         ),
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(icon, size: 20),
+          Icon(
+            icon, 
+            size: 24,
+            color: Theme.of(context).colorScheme.onPrimary,
+          ),
           const SizedBox(width: 8),
           Text(
             text,
