@@ -1,9 +1,7 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/39c90aa8-1329-4570-8401-593c88cbce1a" alt="Mafia Game Logo" width="75">
 </div>
-
 # Tic Tac Toe Bolt 🎮⚡
-
 <div align="center">
   
 ![Logo](https://img.shields.io/badge/-%E2%9A%A1%20TIC%20TAC%20TOE%20BOLT%20%E2%9A%A1-indigo?style=for-the-badge&logo=flutter&logoColor=white)
