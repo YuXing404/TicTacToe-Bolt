@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/39c90aa8-1329-4570-8401-593c88cbce1a" alt="Mafia Game Logo" width="75">
+</div>
+
 # Tic Tac Toe Bolt 🎮⚡
 
 <div align="center">
@@ -12,6 +16,20 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 </div>
+
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/038a0bcc-7f6c-4b3c-92b9-9892762b0582" alt="Mafia Game Feature Graphic" width="1000">
+</div>
+
+<div align="center">
+
+  <a href="https://play.google.com/store/apps/details?id=com.utsosarkar.tic_tac_toe_bolt">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width="200" alt="Get it on Google Play">
+  </a>
+
+</div>
+
 
 ## Table of Contents
 
